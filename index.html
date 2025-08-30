@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navi {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid pink;
+      background-color: rgba(76, 0, 130, 0.223);
+      padding: 0 40px;
+      column-gap: 40px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navi h1 {
+      flex: 1;
+    }
+
+    .navi a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .intro {
+      margin-left: 80px;
+      margin-top: 70px;
+    }
+
+    .intro h3 {
+      margin-left: 40px;
+    }
+
+    .intro h2 {
+      margin-left: 20px;
+    }
+
+    .intro p {
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    .intro button {
+      margin-top: 10px;
+      background-color: rgba(76, 0, 130, 0.215);
+      height: 35px;
+      width: 140px;
+      margin-left: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .image {
+      height: 200px;
+      width: 300px;
+      margin-left: 700px;
+      margin-top: 40px;
+    }
+
+    .image img {
+      height: 180px;
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .introduction {
+      display: flex;
+      background-color: lavender;
+      padding: 40px;
+    }
+
+    .head {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+
+    .project-card {
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      width: 350px;
+      padding: 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+
+    .project-card img {
+      height: 80px;
+      width: 80px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: indigo;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .Information {
+      font-size: 18px;
+      color: black;
+      background-color: rgba(76, 0, 130, 0);
+      padding: 40px;
+      flex: 1;
+    }
+
+    .head2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .img img {
+      height: 300px;
+      width: 300px;
+      margin: 40px;
+    }
+
+    .main3 {
+      display: flex;
+      background-color: rgba(76, 0, 130, 0.1);
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px;
+    }
+
+    /* Skills */
+    /* .skills {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 40px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .skill-card {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-card h4 {
+      margin-bottom: 10px;
+      color: indigo;
+    } */
+.skills {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 40px;
+    }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.skill-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-card img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-card h4 {
+  margin-bottom: 10px;
+  color: indigo;
+  font-size: 20px;
+}
+
+.skill-card p {
+  font-size: 14px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+  background: #f3f0ff;
+}
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .details {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .footer {
+      background-color: black;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .mini img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .mini {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .main6 {
+      background-color: black;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navi">
+    <h1>Neha Sonkar</h1>
+    <a href="#Home"><h3>Home</h3></a>
+    <a href="#Project"><h3>Project</h3></a>
+    <a href="#About"><h3>About</h3></a>
+    <a href="#Skills"><h3>Skills</h3></a>
+    <a href="#Contact"><h3>Contact</h3></a>
+  </div>
+
+  <div class="introduction" id="Home">
+    <div class="intro">
+      <h3>Hello I'm</h3>
+      <h2>Neha Sonkar</h2>
+      <p>A website intern with 6 month of experience</p>
+      <!-- <button onclick="window.open('resume.pdf','_blank')">Get Resume</button> -->
+       <button onclick="window.open('files/Resume Neha.pdf','_blank')">Get Resume</button>
+
+    </div>
+    <div class="image">
+      <img src="neha image.jpeg">
+    </div>
+  </div><br><br>
+
+  <h3 class="head" id="Project">My Projects</h3><br><br>
+  <div class="projects">
+    <div class="project-card">
+      <img src="cs1.jpeg" alt="CSPDCL Portal">
+      <h3>CSPDCL Online Hiring Portal (Internship)</h3>
+      <p>
+        Developed an online recruitment portal to automate the hiring process for candidates.  
+        Features: Candidate Registration, Job Posting, Application Submission, Document Upload.  
+        Built frontend with <b>React.js</b> and backend with <b>Django REST Framework</b>.  
+        Includes token-based authentication, admin dashboard, and profile management. <br/> 
+        <b>Technologies:</b> Python, Django, React.js, REST API, SQL
+      </p>
+    </div>
+
+    <div class="project-card">
+      <img src="SHG.jpg" alt="Self Help Group">
+      <h3>Self-Help Group (Swa-Sahayata Samuh) (Academic Project)</h3>
+      <p>
+        Created a digital platform for SHGs to manage members, savings, and loan activities.  
+        Modules: Member Registration, Financial Record-Keeping, Transaction Tracking.  
+        Designed a user-friendly interface suitable for rural users. <br/> 
+        <b>Technologies:</b> Java (NetBeans), MySQL
+      </p>
+    </div>
+  </div><br><br>
+
+  <div class="main3">
+    <div class="Information">
+      <h4 class="head2" id="About">About Me</h4>
+      <p>
+        Aspiring IT professional currently pursuing an MSc in Information Technology, with a strong foundation in
+        software engineering principles, eager to build a career as a Full Stack Software Developer. Passionate about
+        designing scalable web applications, writing clean and efficient code, and contributing to dynamic tech teams
+        focused on delivering innovative and user-centric software solutions. Seeking an opportunity to apply my
+        academic knowledge and hands-on development skills to real-world projects in the software development industry.
+      </p>
+    </div>
+    <div class="img">
+      <img src="video.jpg">
+    </div>
+  </div><br><br>
+
+  <h3 class="skills" id="Skills">Skills</h3>
+<div class="skills-container">
+  <div class="skill-card">
+    <img src="python.jpg" alt="Python">
+    <h4>Programming Languages</h4>
+    <p>Python, Java</p>
+  </div>
+  <div class="skill-card">
+    <img src="html.png"Frontend">
+    <h4>Frontend</h4>
+    <p>HTML, CSS, JavaScript, React.js</p>
+  </div>
+  <div class="skill-card">
+    <img src="django.jpg" alt="Backend">
+    <h4>Backend</h4>
+    <p>Django, Django REST Framework</p>
+  </div>
+  <div class="skill-card">
+    <img src="db.jpg" alt="Databases">
+    <h4>Databases</h4>
+    <p>MySQL, SQLite</p>
+  </div>
+  <div class="skill-card">
+    <img src="github.png" alt="Tools">
+    <h4>Tools</h4>
+    <p>Git, GitHub, VS Code</p>
+  </div>
+  <div class="skill-card">
+    <img src="jwt.png" alt="Others">
+    <h4>Others</h4>
+    <p>REST API, JWT Authentication, Responsive Web Design</p>
+  </div>
+</div>
+
+
+  <h3 class="contact" id="Contact">Contact Me</h3><br>
+  <div class="details">
+    <h4>EMAIL</h4>
+    <p>nsonkar2020@gmail.com</p><br>
+    <h4>PHONE</h4>
+    <p>7987242578</p><br>
+    <h4>ADDRESS</h4>
+    <p>Lohar Chowk Purani Basti Raipur (C.G.)</p>
+  </div>
+
+  <div class="main6">
+    <div class="footer">
+      <p>Copyright &copy; 2025 ALL Rights Reserved | This portfolio website template is created by me.</p>
+    </div>
+    <div class="mini">
+      <!-- <img src="face.png">
+      <img src="insta.jpg">
+      <img src="in.png">
+      -->
+    </div>
+  </div>
+</body>
+</html>
