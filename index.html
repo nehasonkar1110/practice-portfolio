@@ -259,6 +259,102 @@
       background-color: black;
       padding-bottom: 20px;
     }
+    /* Responsive Design */
+@media (max-width: 768px) {
+  .navi {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navi h1 {
+    margin-bottom: 10px;
+  }
+
+  .navi a h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro {
+    margin: 20px 0;
+  }
+
+  .image {
+    margin: 20px 0;
+    width: auto;
+  }
+
+  .main3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img img {
+    height: 200px;
+    width: 200px;
+    margin: 20px 0;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navi h1 {
+    font-size: 22px;
+  }
+
+  .navi a h3 {
+    font-size: 16px;
+  }
+
+  .intro h2 {
+    font-size: 20px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .intro button {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .head, .skills, .contact {
+    font-size: 22px;
+  }
+
+  .skill-card h4 {
+    font-size: 18px;
+  }
+}
+
   </style>
 </head>
 
@@ -386,3 +482,4 @@
   </div>
 </body>
 </html>
+
